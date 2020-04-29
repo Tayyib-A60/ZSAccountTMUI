@@ -1,0 +1,28 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active" class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['name-inquiry']" routerLinkActive="router-link-active"  class="nav-link waves-light" mdbWavesEffect>NI</a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/funds-transfer']" routerLinkActive="router-link-active" class="nav-link waves-light" mdbWavesEffect>FT</a>
+        </li>
+  
+      </ul>
+  
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->

@@ -1,0 +1,131 @@
+<div class="col col-sm-10 col-md-8" style="margin: 0 auto !important;">
+    <p class="h4 mb-4 mt-5 text-center">Funds Transfer</p>
+    <br>
+    <form class="text-center border border-light p-5" [formGroup]="fundsTransferForm" (ngSubmit)='transferFunds()'>
+        <div class="form-group row">
+            <label for="TrxnRef" class="col-sm-2 col-form-label">Transaction Ref</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="TrxnRef" class="form-control" id="TrxnRef" placeholder="Transaction reference">
+              </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="ReceiverBank" class="col-sm-2 col-form-label">Bank Code</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="ReceiverBank" class="form-control" id="ReceiverBank" placeholder="Receiver Bank Code">
+              </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="Amount" class="col-sm-2 col-form-label">Amount</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="Amount" class="form-control" id="Amount" placeholder="Amount">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="UserTerminalId" class="col-sm-2 col-form-label">Terminal Id</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="UserTerminalId" class="form-control" id="UserTerminalId" placeholder="Receiver Bank Code">
+              </div>
+            </div>
+        </div>
+        
+        <div class="form-group row">
+            <label for="SenderAccount" class="col-sm-2 col-form-label">Sender Account</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="SenderAccount" class="form-control" id="SenderAccount" placeholder="Sender Account Number">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="ReceiverAccount" class="col-sm-2 col-form-label">Receiver Account</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="ReceiverAccount" class="form-control" id="ReceiverAccount" placeholder="Receiver Account Number">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="CurrencyCode" class="col-sm-2 col-form-label">Currency Code</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="CurrencyCode" class="form-control" id="CurrencyCode" placeholder="Currency Code">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="TransactionType" class="col-sm-2 col-form-label">Transaction Type</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="TransactionType" class="form-control" id="TransactionType" placeholder="Transaction Type">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="NameInquiryRef" class="col-sm-2 col-form-label">Ref</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="NameInquiryRef" class="form-control" id="NameInquiryRef" placeholder="Name Inquiry Reference">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Narration" class="col-sm-2 col-form-label">Narration</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="Narration" class="form-control" id="Narration" placeholder="Narration">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Channel" class="col-sm-2 col-form-label">Channel</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="Channel" class="form-control" id="Channel" placeholder="Channel">
+              </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="Instrument" class="col-sm-2 col-form-label">Instrument</label>
+            <div class="col-sm-10">
+              <div class="md-form mt-0">
+                <input mdbInput type="text" formControlName="Instrument" class="form-control" id="Instrument" placeholder="Instrument">
+              </div>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" [disabled]='!fundsTransferForm.valid' mdbBtn color="primary">Send</button>
+        </div>
+        </div>
+      </form>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+<!-- {
+    "TrxnRef" : "FT20200421007",
+    "ReceiverBank" : "025",
+    "Amount" : "10",
+    "UserTerminalId" : "123",
+    "SenderAccount" : "1020783360",
+    "ReceiverAccount" : "2045347371",
+    "CurrencyCode" : "566",
+    "TransactionType" : "20",
+    "NameInquiryRef" : "123",
+    "Narration" : "narration1",
+    "Channel" : "WEB",
+    "Instrument" : "zoneswitch"
+  } -->
